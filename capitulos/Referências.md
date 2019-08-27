@@ -1,6 +1,6 @@
 # Referências 
 
-- [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/) | EN
 - [Make a Web App Using Python & Flask](https://aryaboudaie.com/python/technical/educational/web/flask/2018/10/17/flask.html) | EN
 - [Flask SQLAlchemy Tutorial](https://kite.com/blog/python/flask-sqlalchemy-tutorial/) | EN 
 - [Flask (Wikipedia)](https://en.wikipedia.org/wiki/Flask_(web_framework)) | EN
