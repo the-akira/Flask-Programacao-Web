@@ -1,4 +1,4 @@
-# Bancos de Dados
+# Banco de Dados
 
 ---------------------------------------
 
@@ -172,7 +172,7 @@ O método `query.get()` recebe como parâmetro um **id** e nos retorna o respect
 
 ## Sumarizando
 
-- Neste capítulo estudamos os conceitos básicos de bancos de dados
+- Neste capítulo estudamos os conceitos básicos de banco de dados
 - Vimos alguns Sistemas Gerenciadores de Banco de Dados e sua importância
 - Aprendemos sobre o conceito de **ORM**
 - Utilizamos o **ORM** Flask-SQLAlchemy para criarmos nosso primeiro banco de dados
