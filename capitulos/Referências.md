@@ -1,0 +1,26 @@
+# Referências 
+
+- [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+- [Make a Web App Using Python & Flask](https://aryaboudaie.com/python/technical/educational/web/flask/2018/10/17/flask.html) | EN
+- [Flask SQLAlchemy Tutorial](https://kite.com/blog/python/flask-sqlalchemy-tutorial/) | EN 
+- [Flask (Wikipedia)](https://en.wikipedia.org/wiki/Flask_(web_framework)) | EN
+- [Flask Tutorial](http://www.patricksoftwareblog.com/flask-tutorial/) | EN 
+- [Explore Flask](https://exploreflask.com/en/latest/index.html) | EN
+- [Flask 101](http://www.blog.pythonlibrary.org/tag/flask/) | EN
+- [Full Stack Python](https://www.fullstackpython.com/flask.html) | EN 
+- [Real Python](https://realpython.com/tutorials/flask/) | EN
+- [The Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world) | EN 
+- [Websites with Python Flask](https://opentechschool.github.io/python-flask/) | EN
+- [SQLAlchemy + Flask Tutorial](https://docs.graphene-python.org/projects/sqlalchemy/en/latest/tutorial/) | EN 
+- [How to Flask](http://www.cs.fsu.edu/~jayarama/pythonsu18/Slides/Flask.pdf) | EN
+- [Flask Reddit Community](https://www.reddit.com/r/flask/) | EN
+- [Building Python-based, database-driven web applications](http://jonathansoma.com/tutorials/flask-sqlalchemy-mapbox/index.html) | EN 
+- [Developing Web Applications with Flask](https://www.ntu.edu.sg/home/ehchua/programming/webprogramming/Python3_Flask.html) | EN 
+- [Learn Flask for Python](https://www.youtube.com/watch?v=Z1RJmh_OqeA) | EN 
+- [Flask Tutorials](https://www.youtube.com/watch?v=MwZwr5Tvyxo&list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH) | EN
+- [REST API with Flask & SQLAlchemy](https://www.youtube.com/watch?v=PTZiDnuC86g) | EN 
+- [Learning Flask](https://www.youtube.com/watch?v=BUmUV8YOzgM&list=PLF2JzgCW6-YY_TZCmBrbOpgx5pSNBD0_L) | EN
+- [Python Flask from Scratch](https://www.youtube.com/watch?v=zRwy8gtgJ1A&list=PLillGF-RfqbbbPz6GSEM9hLQObuQjNoj_) | EN
+- [Web Programming with Flask](https://www.youtube.com/watch?v=zdgYw-3tzfI) | EN
+- [Python Web Apps with Flask](https://www.youtube.com/watch?v=qla-KaMF-2Q) | EN
+- [Flask for Beginners Tutorial](https://www.youtube.com/watch?v=EnJKHVEzHFw) | EN
