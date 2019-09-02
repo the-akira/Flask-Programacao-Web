@@ -18,5 +18,5 @@ Em breve...
 
 ### Material Adicional
 
-- [Flask Guia Rápido](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Intro_Flask.md)
+- [Guia Rápido](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Intro_Flask.md)
 - [Referências](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Refer%C3%AAncias.md)
