@@ -24,7 +24,7 @@ Jinja é uma moderna e amigável linguagem de Templates para Python. É veloz, a
 - Execução em Sandbox
 - Um poderoso sistema automático de *escaping* para prevenção contra ataques **[XSS](https://en.wikipedia.org/wiki/Cross-site_scripting)**
 - Herança de Templates
-- Compila para código python otimizado *just in time*
+- Compila para código python otimizado *[just in time](https://en.wikipedia.org/wiki/Just-in-time_compilation)*
 - Fácil de debugar
 - Sintáxe Configurável
 
