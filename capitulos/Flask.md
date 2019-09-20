@@ -190,7 +190,7 @@ if __name__ == '__main__':
 
 Atribuindo **debug** como **True** nos permite um maior controle sobre os erros que ocorrem durante o desenvolvimento, porém é importante lembrarmos que devemos utilizar somente durante essa fase, jamais devemos utilizar em produção.
 
-Você pode ver o exemplo em tempo real acessando: https://repl.it/@theakira/Introducao-Flask
+Você pode ver o exemplo em tempo real acessando: https://repl.it/@theakira/Flask-Introducao
 
 ---------------------------------------
 
