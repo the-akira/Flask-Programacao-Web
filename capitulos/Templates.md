@@ -384,6 +384,8 @@ Veja que utilizamos o comando **block** que define um bloco com o nome **conteud
 
 Através do comando **extends** indicamos que este arquivo irá herdar as propriedades de nosso `layout.html` e dentro do bloco **conteudo** nós definimos o HTML a ser exibido. Lembrando que é necessário fecharmos o bloco com **endblock**. Agora podemos executar nossa aplicação com o comando `python app.py` para vermos o nosso **layout** em ação.
 
+Caso queira experimentar o código em tempo real: https://repl.it/@theakira/Flask-Templates
+
 ---------------------------------------
 
 ## Sumarizando
