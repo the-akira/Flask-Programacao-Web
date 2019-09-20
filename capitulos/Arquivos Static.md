@@ -84,6 +84,8 @@ Através da função **url_for()** estamos buscando dentro do diretório **stati
 
 Agora podemos executar nossa aplicação através do comando `python app.py` e navegar até `http://127.0.0.1:5000/static` para vermos as alterações em nossa aplicação.
 
+Caso deseje experimentar com o código em tempo real: https://repl.it/@theakira/Flask-Static
+
 ---------------------------------------
 
 ## Sumarizando
