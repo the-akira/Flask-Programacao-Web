@@ -4,7 +4,7 @@
 
 Este guia tem como objetivo ensinar Programação Web com **[Python](https://www.python.org/)** através do microframework **[Flask](https://flask.palletsprojects.com/en/1.1.x/)**
 
-### Parte 1: Fundamentos Básicos
+### Conteúdo
 
 - [Introdução](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Flask.md)
 - [Templates](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Templates.md)
