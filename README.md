@@ -5,7 +5,7 @@
 </h1>
 
 <p align="center">
-	Este guia tem como objetivo ensinar Programação Web com **[Python](https://www.python.org/)** através do microframework **[Flask](https://flask.palletsprojects.com/en/1.1.x/)**
+	Este guia tem como objetivo ensinar Programação Web com <b><a href="https://www.python.org/">Python</a></b> através do microframework <b><a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a></b>
 </p>
 
 ---------------------------------------
