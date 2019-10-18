@@ -1,8 +1,14 @@
-# Programação Web com Flask
+<h1 align="center">Programação Web com Flask</h1>
 
-![capa](https://i.imgur.com/LyfMkRr.jpg)
+<h1 align="center">
+    <img alt="Python" title="Python-Flask" src="https://i.imgur.com/LyfMkRr.jpg"> </br>
+</h1>
 
-Este guia tem como objetivo ensinar Programação Web com **[Python](https://www.python.org/)** através do microframework **[Flask](https://flask.palletsprojects.com/en/1.1.x/)**
+<p align="center">
+	Este guia tem como objetivo ensinar Programação Web com **[Python](https://www.python.org/)** através do microframework **[Flask](https://flask.palletsprojects.com/en/1.1.x/)**
+</p>
+
+---------------------------------------
 
 ### Conteúdo
 
