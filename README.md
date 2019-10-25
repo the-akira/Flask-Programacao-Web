@@ -12,10 +12,12 @@
 
 ### Conteúdo
 
-- [Introdução](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Flask.md)
-- [Templates](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Templates.md)
-- [Arquivos Static](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Arquivos%20Static.md)
-- [Formulários Web](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Formul%C3%A1rios%20Web.md)
-- [Banco de Dados](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Banco%20de%20Dados.md)
-- [Guia Rápido](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Intro_Flask.md)
-- [Referências](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Refer%C3%AAncias.md)
+01. [Introdução](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Flask.md)
+02. [Templates](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Templates.md)
+03. [Arquivos Static](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Arquivos%20Static.md)
+04. [Formulários Web](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Formul%C3%A1rios%20Web.md)
+05. [Banco de Dados](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Banco%20de%20Dados.md)
+06. [Guia Rápido](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Intro_Flask.md)
+07. [Referências](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Refer%C3%AAncias.md)
+
+---------------------------------------
