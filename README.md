@@ -1,7 +1,7 @@
 <h1 align="center">Programação Web com Flask</h1>
 
 <h1 align="center">
-    <img alt="Python" title="Python-Flask" src="https://i.imgur.com/LyfMkRr.jpg"> </br>
+    <img alt="Python" title="Python-Flask" src="https://i.imgur.com/k5yJ8jQ.png"> </br>
 </h1>
 
 <p align="center">
