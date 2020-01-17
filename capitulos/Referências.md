@@ -24,3 +24,4 @@
 - [Web Programming with Flask](https://www.youtube.com/watch?v=zdgYw-3tzfI) | EN
 - [Python Web Apps with Flask](https://www.youtube.com/watch?v=qla-KaMF-2Q) | EN
 - [Flask for Beginners Tutorial](https://www.youtube.com/watch?v=EnJKHVEzHFw) | EN
+- [Flask Tutorials](https://www.youtube.com/playlist?list=PLzMcBGfZo4-n4vJJybUVV3Un_NFS5EOgX) | EN
