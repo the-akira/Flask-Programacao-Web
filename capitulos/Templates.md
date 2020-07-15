@@ -55,7 +55,7 @@ if __name__ == '__main__':
 
 Dentro de nosso diretório `Exemplos` vamos agora criar um novo diretório chamado de `templates` e nele vamos criar um arquivo `index.html` com o seguinte conteúdo:
 
-```
+```html
 <p>Nosso primeiro Template</p>
 ```
 
@@ -113,7 +113,7 @@ Novamente executamos nossa aplicação através do comando `python app.py` e pod
 
 Vamos agora criar uma nova rota e um novo template de forma que possamos trabalhar com estruturas variadas. Em nosso diretório **templates** vamos criar o arquivo `jinja.html`, no momento ele terá o seguinte conteúdo
 
-```
+```html
 <h1>Jinja Template</h1>
 ```
 
@@ -220,7 +220,7 @@ Podemos observar que:
 
 Agora que temos acesso a todos esses dados em nosso template, podemos editar nosso arquivo `jinja.html` para apresentarmos os dados em nossa página.
 
-```
+```html
 <h1>Jinja Template</h1>
 <hr>
 
@@ -361,7 +361,7 @@ Finalmente vamos executar nossa aplicação através do comando `python app.py` 
 
 A Herança de Template nos permite criar um arquivo que servirá como o **layout** principal de nossa aplicação, de forma que não seja necessário ficarmos repetindo código desnecessariamente. Por exemplo, em aplicações web é muito como a existência de uma barra de navegação que contém diversas rotas, para não precisarmos ficar repetindo blocos html podemos usar o conceito de herança. Para entendermos melhor vamos então criar um arquivo `layout.html` em nosso diretório `templates` com o seguinte conteúdo
 
-```
+```html
 <html>
     <head>
         <title>Aplicação Flask</title>
@@ -376,7 +376,7 @@ A Herança de Template nos permite criar um arquivo que servirá como o **layout
 
 Veja que utilizamos o comando **block** que define um bloco com o nome **conteudo** arbitrariamente escolhido por nós, este bloco será capaz de receber conteúdo de outros templates. Agora vamos editar nosso arquivo `index.html` para que ele possa herdar as propriedades de nosso `layout.html`
 
-```
+```html
 {% extends 'layout.html' %}
 
 {% block conteudo %}<p>Olá {{ nome }}</p>{% endblock %}
