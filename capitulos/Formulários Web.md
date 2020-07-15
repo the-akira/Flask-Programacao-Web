@@ -18,7 +18,7 @@ Exemplo de um simples Formulário Web
 
 Este formulário nos reflete o seguinte código HTML
 
-```
+```html
 <form>
   Nome:
   <br>
@@ -55,7 +55,7 @@ def formulario():
 
 Agora que temos uma nova rota chamada de **formulario**, vamos então criar um template `formulario.html` dentro de nosso diretório `templates`, o conteúdo dele será:
 
-```
+```html
 {% extends 'layout.html' %}
 
 {% block conteudo %}
@@ -91,7 +91,7 @@ from flask import Flask, render_template, request, redirect
 
 Agora vamos alterar a função **formulario()** de forma que possamos receber os dados do usuário
 
-```
+```python
 @app.route('/formulario', methods=['GET','POST'])
 def formulario():
 	if request.method == 'POST':
@@ -172,7 +172,7 @@ class LivroForm(FlaskForm):
 
 Agora que temos nosso formulário definido, vamos definir **duas novas rotas** para experimentarmos. Novamente editamos nosso arquivo `app.py`:
 
-```
+```python
 @app.route('/wtf', methods=['GET','POST'])
 def wtf():
 	form = LivroForm()
@@ -202,7 +202,7 @@ Agora precisamos criar nossos templates para que possamos exibir o formulário e
 
 `wtf.html`
 
-```
+```html
 <h1>Cadastro de Livros Flask-WTF</h1>
 
 <form method="POST">
@@ -230,7 +230,7 @@ Agora precisamos criar nossos templates para que possamos exibir o formulário e
 
 Por fim vamos editar nosso arquivo `obrigado.html` com o seguinte conteúdo
 
-```
+```html
 <h1>Obrigado por cadastar o livro em nossa aplicação</h1>
 
 <ul>
