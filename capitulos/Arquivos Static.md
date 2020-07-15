@@ -12,7 +12,7 @@ Para trabalharmos com esses arquivos precisaremos criar um diretório chamado `s
 
 No diretório `css` vamos criar um arquivo `style.css` com o seguinte conteúdo:
 
-```
+```css
 body {
 	background-color: gray;
 	color: white;
@@ -25,7 +25,7 @@ Veja que alteramos o fundo de Aplicação para a cor cinza e também alteramos a
 
 Agora vamos criar dentro do diretório `js` um arquivo chamado `main.js` com o seguinte conteúdo:
 
-```
+```javascript
 alert('Hello World')
 ```
 
@@ -59,7 +59,7 @@ static
 
 Agora em nossa aplicação, vamos editar o arquivo `app.py` de forma que possamos servir esses **arquivos static**, para isso vamos criar uma nova rota de exemplo.
 
-```
+```python
 @app.route('/static')
 def arquivos_static():
 	return render_template('static.html')
@@ -67,7 +67,7 @@ def arquivos_static():
 
 Veja que é apenas uma simples rota para teste, agora vamos criar um arquivo `static.html` dentro do diretório `templates` para que possamos servir o conteúdo estático. Nosso arquivo `static.html` contará com o seguinte conteúdo:
 
-```
+```html
 {% extends 'layout.html' %}
 
 {% block conteudo %}
