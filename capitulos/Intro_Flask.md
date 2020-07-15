@@ -232,7 +232,7 @@ def home():
 
 Utilizando Jinja2 dentro de `templates/home.html`:
 
-```
+```html
 {% for posts in posts %}
 	<div>
 		<p>{{ post.texto }}</p>
@@ -249,7 +249,7 @@ Utilizando filtros:
 
 Utilizando **extends**:
 
-```
+```html
 {% extends 'base.html' %}
 
 {% block content %}
@@ -261,7 +261,7 @@ Utilizando **extends**:
 
 Em `base.html` vamos definir nossa estrutura base:
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -282,7 +282,7 @@ Utilizando **includes** para adicionar arquivos parciais:
 
 Adicionando **folhas de estilo** para `templates/base.html`:
 
-```
+```html
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 ```
 
@@ -290,7 +290,7 @@ Adicionando **folhas de estilo** para `templates/base.html`:
 
 Em `projeto/models.py`:
 
-```
+```python
 from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
@@ -308,7 +308,7 @@ class Post(db.Model):
 
 Em `projeto/__init__.py`:
 
-```
+```python
 from projeto.models import db
 
 app = Flask(__name__)
@@ -319,7 +319,7 @@ with app.app_context():
 
 Em `projeto/config.py`:
 
-```
+```python
 import os
 BASE_DIR = os.path.abspath(os.path.dirname(__name__))
 
