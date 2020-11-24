@@ -2,8 +2,6 @@
 
 Este projeto tem como objetivo apresentar o microframework Flask e suas principais características que nos possibilitam desenvolver aplicações web completas e **[escaláveis](https://www.romexsoft.com/blog/scalable-website/)**.
 
----------------------------------------
-
 ## Introdução
 
 **[Flask](https://flask.palletsprojects.com/en/1.1.x/)** foi criado por Armin Ronacher, seu lançamento oficial ocorreu no ano de 2010. Por ser pequeno, leve e minimalista, ele é conhecido como um microframework Python, mas isso não quer dizer que ele seja somente limitado a aplicações pequenas, muito pelo contrário, Flask pode ser utilizado em grandes aplicações que escalam, sua fama de microframework ocorre pelo fato de Flask manter o núcleo de uma aplicação simples, porém extensível, Flask não tem construído uma camada de abstração para banco de dados, nem mesmo validação para formulários, porém Flask suporta **extensões** que são capazes de adicionar todas essas funcionalidades para nossa aplicação.
@@ -31,8 +29,6 @@ Sumarizando, o microframework Flask é capaz de nos fornecer:
 Através de Flask você pode lidar com requisições HTTP e AJAX, rotear requests para um controller, avaliar e validar dados requisitados e também fornecer respostas com **HTML** ou **JSON**.
 
 Você pode conferir projetos e corporações que usam Flask em: **[flask-powered](https://github.com/rochacbruno/flask-powered)**
-
----------------------------------------
 
 ## Instalando Flask
 
@@ -124,8 +120,6 @@ pip install -r requirements.txt
 
 Caso tenha interesse em se aprofundar mais na questão dos Ambientes Virtuais, você pode visitar os guias: **[Gerenciadores de Pacotes e Ambientes Virtuais](https://github.com/the-akira/Python-Iluminado/blob/master/Capitulos/29.PIP.md)** e **[Environment](https://exploreflask.com/en/latest/environment.html#)**
 
----------------------------------------
-
 ## Flask Hello World
 
 Agora que já temos nosso Ambiente Virtual funcionando corretamente e Flask está instalado em nosso Ambiente isolado, vamos criar nosso primeiro **Hello World**. Para isso, vamos criar em nosso diretório `Exemplo` o arquivo `app.py` que terá o seguinte conteúdo
@@ -192,8 +186,6 @@ Atribuindo **debug** como **True** nos permite um maior controle sobre os erros 
 
 Você pode ver o exemplo em tempo real acessando: https://repl.it/@theakira/Flask-Introducao
 
----------------------------------------
-
 ## Sumarizando
 
 Neste capítulo aprendemos
@@ -203,5 +195,3 @@ Neste capítulo aprendemos
 - Manipulando Ambientes Virtuais
 - Criação de uma simples aplicação `Hello World` 
 - Conhecimento básico da estrutura do Flask
-
----------------------------------------

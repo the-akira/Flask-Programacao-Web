@@ -1,7 +1,5 @@
 # Arquivos Static
 
----------------------------------------
-
 ## Introdução
 
 Os **Arquivos Static**, como seus nomes sugerem, são arquivos que não mudam, **estáticos**. Aplicações Web geralmente precisam servir esses arquivos, que seriam **imagens**, arquivos **Javascript** e **CSS**.
@@ -53,8 +51,6 @@ static
     └── main.js
 ```
 
----------------------------------------
-
 ## Servindo os Arquivos Static
 
 Agora em nossa aplicação, vamos editar o arquivo `app.py` de forma que possamos servir esses **arquivos static**, para isso vamos criar uma nova rota de exemplo.
@@ -86,8 +82,6 @@ Agora podemos executar nossa aplicação através do comando `python app.py` e n
 
 Caso deseje experimentar com o código em tempo real: https://repl.it/@theakira/Flask-Static
 
----------------------------------------
-
 ## Sumarizando
 
 Nesse capítulo aprendemos como gerenciar e servir nossos arquivos static, podemos também observar que Flask torna muito fácil trabalharmos com esses arquivos. 
@@ -95,5 +89,3 @@ Nesse capítulo aprendemos como gerenciar e servir nossos arquivos static, podem
 Caso você queira optar por utilizar uma **[CDN](https://www.webopedia.com/TERM/C/CDN.html)** para servir os seus arquivos static de uma forma mais eficiente, você pode checar este interessante **[Tutorial](https://www.digitalocean.com/community/tutorials/using-a-cdn-to-speed-up-static-content-delivery)**
 
 Agora que já temos o domínio dos Arquivos Static podemos começar a utilizar Formulários para capturar dados dos usuários de nossa aplicação.
-
----------------------------------------

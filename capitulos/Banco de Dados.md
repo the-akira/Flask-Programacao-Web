@@ -1,7 +1,5 @@
 # Banco de Dados
 
----------------------------------------
-
 ## Introdução
 
 Um **[banco de dados](https://pt.wikipedia.org/wiki/Banco_de_dados)** é uma coleção organizada de dados, geralmente armazenados e acessados eletronicamente através de um sistema de computador.
@@ -17,8 +15,6 @@ Em determinado momento muitos aplicações web terão de lidar com banco de dado
 Um Object Relational Mapper é basicamente uma camada de abstração que se estabelece no topo de **[consultas SQL brutas](https://www.codecademy.com/articles/sql-commands)** sendo executadas em nosso banco dados. SQLAlchemy nos fornece uma **[API](https://en.wikipedia.org/wiki/Application_programming_interface)** consistente para diversos sistemas de banco de dados, os mais populares incluem MySQL, PostgreSQL e SQLite e também torna fácil movermos dados entre nossos modelos e nosso banco de dados e ainda torna fácil por exemplo a alteração de um sistema de banco de dados e a migração de nossos **[schemas](https://en.wikipedia.org/wiki/Database_schema)**. Em resumo, SQLAlchemy nos possibilitará escrever todo o código em Python, sem a necessidade de escrevermos códigos SQL.
 
 Neste guia específico, vamos utilizar a versão do SQLAlchemy para Flask chamada de **[Flask-SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)** que nos possibilitará um início rápido e vamos escolher o sistema gerenciador de banco de dados [SQLite3](https://www.sqlite.org/index.html), que embora não seja uma solução escalável, ela é muito conveniente para pequenas aplicações como a nossa, além disso, em SQLite cada base de dados é armazenada em um único arquivo em disco e não há necessidade de executarmos um servidor de banco de dados como em MySQL e PostgreSQL.
-
----------------------------------------
 
 ## Flask-SQLAlchemy
 
@@ -168,8 +164,6 @@ Livro.query.get(1)
 
 O método `query.get()` recebe como parâmetro um **id** e nos retorna o respectivo Livro com tal **id**, nesse caso: `Livro("Brave New World")`
 
----------------------------------------
-
 ## Sumarizando
 
 - Neste capítulo estudamos os conceitos básicos de banco de dados
@@ -179,5 +173,3 @@ O método `query.get()` recebe como parâmetro um **id** e nos retorna o respect
 - Executamos algumas manipulações básicas como inserção de dados e consultas simples
 
 Este Capítulo fecha a saga dos **fundamentos básicos de Flask**, agora vamos partir para a segunda parte de nossa caminhada, onde vamos aprender a estruturar uma aplicação de uma forma mais consistente, bem como unir todos os conhecimentos que adquirimos até então.
-
----------------------------------------

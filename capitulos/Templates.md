@@ -1,12 +1,10 @@
 # Templates
 
----------------------------------------
-
 ## Introdução
 
 Templates são um elemento essencial em Flask e muitos outros frameworks, eles são o que chamamos de camada de apresentação ou *view* de nossa aplicação. Um template é um arquivo que contém textos estáticos, assim como *placeholders* para renderizarmos conteúdo dinâmico.
 
-![templates](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/TempEngGen015.svg/220px-TempEngGen015.svg.png)
+![templates](https://raw.githubusercontent.com/the-akira/Flask-Programacao-Web/master/imagens/FlaskTemplate.png)
 
 Como podemos ver na ilustração:
 
@@ -14,8 +12,6 @@ Como podemos ver na ilustração:
 - Temos um arquivo template
 
 O template engine conecta com o modelo de dados e processa os códigos específicos nos templates e então direciona o output para um arquivo específico que normalmente é renderizado em um browser de forma que possamos ver a apresentação dos dados.
-
----------------------------------------
 
 ## Jinja2
 
@@ -34,8 +30,6 @@ Podemos instalar Jinja2 através do comando `pip install Jinja2`, porém uma vez
 
 - `{% ... %}`: Usado para executar comandos como **for loops** ou atribuição de valores
 - `{{ ... }}`: Usado para imprimirmos o resultado de expressões no template
-
----------------------------------------
 
 ## Trabalhando com Templates em Flask
 
@@ -81,8 +75,6 @@ Observe que tivemos que importar a função **render_template()** para podermos 
 Para saber mais detalhes sobre a função visite: **[flask.render_template](https://flask.palletsprojects.com/en/1.1.x/api/#flask.render_template)**
 
 Agora execute a aplicação com o comando `python app.py` e visite `http://127.0.0.1:5000/` para ver o resultado.
-
----------------------------------------
 
 ## Passando Variáveis para o Template
 
@@ -355,8 +347,6 @@ Podemos observar que:
 
 Finalmente vamos executar nossa aplicação através do comando `python app.py` e vamos navegar até `http://127.0.0.1:5000/jinja`. Veja como são exibidos nossos dados e experimente da forma que melhor lhe agrade.
 
----------------------------------------
-
 ## Herança de Template
 
 A Herança de Template nos permite criar um arquivo que servirá como o **layout** principal de nossa aplicação, de forma que não seja necessário ficarmos repetindo código desnecessariamente. Por exemplo, em aplicações web é muito como a existência de uma barra de navegação que contém diversas rotas, para não precisarmos ficar repetindo blocos html podemos usar o conceito de herança. Para entendermos melhor vamos então criar um arquivo `layout.html` em nosso diretório `templates` com o seguinte conteúdo
@@ -386,8 +376,6 @@ Através do comando **extends** indicamos que este arquivo irá herdar as propri
 
 Caso queira experimentar o código em tempo real: https://repl.it/@theakira/Flask-Templates
 
----------------------------------------
-
 ## Sumarizando
 
 Neste capítulo:
@@ -399,5 +387,3 @@ Neste capítulo:
 - Criamos um Layout principal para nossa simples Aplicação
 
 Agora que já temos o domínio dos Templates vamos estudar os Arquivos Static que são um aspecto importante em uma aplicação.
-
----------------------------------------

@@ -8,8 +8,6 @@
 	Este guia tem como objetivo ensinar Programação Web com <b><a href="https://www.python.org/">Python</a></b> através do microframework <b><a href="https://flask.palletsprojects.com/en/1.1.x/">Flask</a></b>
 </p>
 
----------------------------------------
-
 ### Conteúdo
 
 01. [Introdução](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Flask.md)
@@ -19,5 +17,3 @@
 05. [Banco de Dados](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Banco%20de%20Dados.md)
 06. [Guia Rápido](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Intro_Flask.md)
 07. [Referências](https://github.com/the-akira/Flask-Programacao-Web/blob/master/capitulos/Refer%C3%AAncias.md)
-
----------------------------------------

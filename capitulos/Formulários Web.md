@@ -1,7 +1,5 @@
 # Formulários Web
 
----------------------------------------
-
 ## Introdução
 
 **[Formulários HTML](https://en.wikipedia.org/wiki/Form_(HTML))** são um dos principais pontos de **interação** entre um usuário e um site ou aplicativo. Eles permitem que os usuários enviem dados para nossa aplicação. Na maioria das vezes, os dados são enviados para o servidor Web, mas a página Web também pode interceptá-los para usá-los por conta própria.
@@ -14,9 +12,9 @@ A principal diferença entre um formulário HTML e um documento HTML regular é 
 
 Exemplo de um simples Formulário Web
 
-![form](https://i.imgur.com/zlB95Sn.png)
+![form](https://raw.githubusercontent.com/the-akira/Flask-Programacao-Web/master/imagens/HTMLForm.png)
 
-Este formulário nos reflete o seguinte código HTML
+Este formulário nos reflete o seguinte código HTML:
 
 ```html
 <form>
@@ -40,8 +38,6 @@ Nesse capítulo não vamos abordar o aspecto **HTML** de forma detalhada, nosso 
 
 - [W3Schools - HTML Forms](https://www.w3schools.com/html/html_forms.asp)
 - [Developer Mozilla - HTML Forms](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms)
-
----------------------------------------
 
 ## Básico de Formulários em Flask
 
@@ -120,8 +116,6 @@ def formulario():
 Momento de testarmos nossa aplicação, vamos executá-la através do comando `python app.py` e vamos visitar a URL: `http://127.0.0.1:5000/formulario`. Se fizermos uma submissão do formulário poderemos observar que eles serão impressos em nosso terminal, muito legal, não? Agora já conseguimos capturar os dados enviados através de formulários por usuários! 
 
 Vamos agora aperfeiçoar nosso conhecimento e trabalhar com a biblioteca **[Flask-WTF](https://flask-wtf.readthedocs.io/en/stable/)**, esta que nos possibilitará o gerenciamento de nossos formulários de forma muito mais simples e amigável e também irá colaborar com a segurança de nossa aplicação.
-
----------------------------------------
 
 ## Formulários com Flask-WTF
 
@@ -250,10 +244,6 @@ Finalmente podemos executar nossa aplicação com o comando `python app.py`, vam
 
 Para experimentar o código deste tutorial: https://repl.it/@theakira/Flask-Formularios-Web
 
----------------------------------------
-
 ## Sumarizando
 
 Neste capítulo estudamos conceitos básicos de formulários, bem como a utilização deles em Flask. Através da biblioteca Flask-WTF aprendemos a criar formulários de uma forma mais eficaz e segura. Uma vez que adquirimos a habilidade de capturar os dados dos usuários, agora nosso caminho é guardá-los em um banco de dados que possa persistí-los e não somente armazená-los em variáveis de sessão.
-
----------------------------------------
