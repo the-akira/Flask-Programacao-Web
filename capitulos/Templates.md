@@ -88,11 +88,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	nome = 'Gabriel'
-	return render_template('index.html', nome=nome)
+    nome = 'Gabriel'
+    return render_template('index.html', nome=nome)
 
 if __name__ == '__main__':
-  app.run(debug=True)
+    app.run(debug=True)
 ```
 
 ```
@@ -117,15 +117,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	nome = 'Gabriel'
-	return render_template('index.html', nome=nome)
+    nome = 'Gabriel'
+    return render_template('index.html', nome=nome)
 
 @app.route('/jinja')
 def jinja():
-	return render_template('jinja.html')
+    return render_template('jinja.html')
 
 if __name__ == '__main__':
-  app.run(debug=True)
+    app.run(debug=True)
 ```
 
 Executamos nossa aplicação e agora podemos navegar até `http://127.0.0.1:5000/jinja` para ver o resultado. Agora vamos criar alguns dados para experimentarmos em nosso template, novamente vamos editar o arquivo `app.py` com o seguinte conteúdo:
@@ -136,64 +136,64 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-	nome = 'Gabriel'
-	return render_template('index.html', nome=nome)
+    nome = 'Gabriel'
+    return render_template('index.html', nome=nome)
 
 @app.route('/jinja')
 def jinja():
-	num = 10
+    num = 10
 
-	langs = ['Python', 'Javascript', 'C', 'C++', 'Bash', 'Haskell']
+    langs = ['Python', 'Javascript', 'C', 'C++', 'Bash', 'Haskell']
 
-	personagens = {
-		'DBZ': 'Goku',
-		'Naruto': 'Kakashi',
-		'Death Note': 'Raito Yagami',
-		'Akira': 'Tetsuo',
-		'Pokémon': 'Ash'
-	}
+    personagens = {
+        'DBZ': 'Goku',
+        'Naruto': 'Kakashi',
+        'Death Note': 'Raito Yagami',
+        'Akira': 'Tetsuo',
+        'Pokémon': 'Ash'
+    }
 
-	cores = ('red', 'green', 'blue')
+    cores = ('red', 'green', 'blue')
 
-	online = True
+    online = True
 
-	class Aplicacao:
-		def __init__(self, nome, descricao, url):
-			self.nome = nome
-			self.descricao = descricao
-			self.url = url 
+    class Aplicacao:
+        def __init__(self, nome, descricao, url):
+            self.nome = nome
+            self.descricao = descricao
+            self.url = url 
 
-		def nome(self):
-			return f'O nome da aplicação é {self.nome}'
+        def nome(self):
+            return f'O nome da aplicação é {self.nome}'
 
-		def endereco(self):
-			return f'Você pode acessar a aplicação atraves do endereço: {self.url}'
+        def endereco(self):
+            return f'Você pode acessar a aplicação atraves do endereço: {self.url}'
 
-	app = Aplicacao(nome='Flask Programação Web', descricao='Tutorial Completo', url='https://github.com/the-akira')
+    app = Aplicacao(nome='Flask Programação Web', descricao='Tutorial Completo', url='https://github.com/the-akira')
 
-	def cubo(x):
-		return x**3
+    def cubo(x):
+        return x**3
 
-	html = "<h1>Titulo Grande</h1>"
+    html = "<h1>Titulo Grande</h1>"
 
-	malicioso = "<script>alert('Voce foi hackeado!')</script>"
+    malicioso = "<script>alert('Voce foi hackeado!')</script>"
 
-	return render_template(
-		'jinja.html', 
-		num=num,
-		langs=langs,
-		personagens=personagens,
-		cores=cores,
-		online=online,
-		Aplicacao=Aplicacao,
-		cubo=cubo,
-		app=app,
-		html=html,
-		malicioso=malicioso
-	)
+    return render_template(
+        'jinja.html', 
+        num=num,
+        langs=langs,
+        personagens=personagens,
+        cores=cores,
+        online=online,
+        Aplicacao=Aplicacao,
+        cubo=cubo,
+        app=app,
+        html=html,
+        malicioso=malicioso
+    )
 
 if __name__ == '__main__':
-  app.run(debug=True)
+    app.run(debug=True)
 ```
 
 Podemos observar que:
@@ -223,27 +223,27 @@ Agora que temos acesso a todos esses dados em nosso template, podemos editar nos
 
 <h3>2. Percorrendo a lista com o For Loop</h3>
 <ul>
-	{% for lang in langs %}
-		<li>{{ lang }}</li>
-	{% endfor %}
+    {% for lang in langs %}
+        <li>{{ lang }}</li>
+    {% endfor %}
 </ul>
 
 <hr>
 
 <h3>3. Percorrendo a lista com índices através do For Loop</h3>
 <ul>
-	{% for lang in langs %}
-		<li>{{ loop.index }} : {{ lang }}</li>
-	{% endfor %}
+    {% for lang in langs %}
+        <li>{{ loop.index }} : {{ lang }}</li>
+    {% endfor %}
 </ul>
 
 <hr>
 
 <h3>4. Percorrendo dicionário com o For Loop</h3>
 <ul>
-	{% for k, v in personagens.items() %}
-		<li>{{ k }} : {{ v }}</li>
-	{% endfor %}
+    {% for k, v in personagens.items() %}
+        <li>{{ k }} : {{ v }}</li>
+    {% endfor %}
 </ul>
 
 <hr>
@@ -284,18 +284,18 @@ Agora que temos acesso a todos esses dados em nosso template, podemos editar nos
 
 <h3>11. Condicionais</h3>
 {% if online %}
-	<p>Usuário se encontra online</p>
+    <p>Usuário se encontra online</p>
 {% endif %}
 
 <hr>
 
 <h3>12. Comparações</h3>
 {% if num < 18 %}
-	<p>Valor menor que 18</p>
+    <p>Valor menor que 18</p>
 {% elif num == 20 %}
-	<p>Valor é igual a 20</p>
+    <p>Valor é igual a 20</p>
 {% else %}
-	<p>Nenhuma das outras opções</p>
+    <p>Nenhuma das outras opções</p>
 {% endif %}
 
 <hr>
