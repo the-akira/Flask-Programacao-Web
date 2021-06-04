@@ -18,15 +18,15 @@ Este formulário nos reflete o seguinte código HTML:
 
 ```html
 <form>
-  Nome:
-  <br>
-  <input type="text" name="nome" value="Tetsuo">
-  <br>
-  Sobrenome:
-  <br>
-  <input type="text" name="sobrenome" value="Shima">
-  <br>
-  <input type="submit" value="Enviar">
+    Nome:
+    <br>
+    <input type="text" name="nome" value="Tetsuo">
+    <br>
+    Sobrenome:
+    <br>
+    <input type="text" name="sobrenome" value="Shima">
+    <br>
+    <input type="submit" value="Enviar">
 </form> 
 ```
 
@@ -46,7 +46,7 @@ Para entendermos o básico de como os formulários funcionam em Flask, vamos ago
 ```python
 @app.route('/formulario')
 def formulario():
-	return render_template('formulario.html')
+    return render_template('formulario.html')
 ```
 
 Agora que temos uma nova rota chamada de **formulario**, vamos então criar um template `formulario.html` dentro de nosso diretório `templates`, o conteúdo dele será:
@@ -55,22 +55,22 @@ Agora que temos uma nova rota chamada de **formulario**, vamos então criar um t
 {% extends 'layout.html' %}
 
 {% block conteudo %}
-	<p>Formulário</p>
-	<form method="POST">
-	  Nome:
-	  <br>
-	  <input type="text" name="nome">
-	  <br>
-	  Email:
-	  <br>
-	  <input type="email" name="email">
-	  <br>
-	  Senha:
-	  <br>
-	  <input type="password" name="senha">
-	  <br>
-	  <input type="submit" value="Enviar">
-	</form>
+    <p>Formulário</p>
+    <form method="POST">
+	    Nome:
+	    <br>
+	    <input type="text" name="nome">
+	    <br>
+	    Email:
+	    <br>
+	    <input type="email" name="email">
+	    <br>
+	    Senha:
+	    <br>
+	    <input type="password" name="senha">
+	    <br>
+	    <input type="submit" value="Enviar">
+    </form>
 {% endblock %}
 ```
 
@@ -90,18 +90,18 @@ Agora vamos alterar a função **formulario()** de forma que possamos receber os
 ```python
 @app.route('/formulario', methods=['GET','POST'])
 def formulario():
-	if request.method == 'POST':
-		req = request.form
+    if request.method == 'POST':
+        req = request.form
 
-		nome = req['nome']
-		email = req.get('email')
-		senha = request.form['senha']
+        nome = req['nome']
+        email = req.get('email')
+        senha = request.form['senha']
 
-		print(nome,email,senha)
+        print(nome,email,senha)
 		
-		return redirect(request.url)
+        return redirect(request.url)
 		
-	return render_template('formulario.html')
+    return render_template('formulario.html')
 ```
 
 - Adicionamos um **if** que será avaliado como **True** caso seja uma requisição POST
@@ -147,12 +147,12 @@ Agora que todos os nossos **imports** estão organizados corretamente é o momen
 app.config['SECRET_KEY'] = 'chavesecreta'
 
 class LivroForm(FlaskForm):
-	titulo = StringField('Titulo do Livro', validators=[DataRequired()])
-	autor = StringField('Nome do Autor', validators=[DataRequired()])
-	vivo = BooleanField('Autor está Vivo?')
-	genero = SelectField('Gênero:',choices=[('aventura','Aventura'),('cientifico','Cientifico'),('romance','Romance')])
-	resumo = TextAreaField()
-	submit = SubmitField('Enviar')
+    titulo = StringField('Titulo do Livro', validators=[DataRequired()])
+    autor = StringField('Nome do Autor', validators=[DataRequired()])
+    vivo = BooleanField('Autor está Vivo?')
+    genero = SelectField('Gênero:',choices=[('aventura','Aventura'),('cientifico','Cientifico'),('romance','Romance')])
+    resumo = TextAreaField()
+    submit = SubmitField('Enviar')
 ```
 
 1. Iniciamos atribuindo o valor 'chavesecreta' à nossa variável de configuração **SECRET_KEY**, ela irá nos auxiliar na proteção contra ataques **[Cross-Site Request Forgery](https://en.wikipedia.org/wiki/Cross-site_request_forgery)**, importante lembrarmos que não é uma boa prática o que estamos fazendo, o ideal é guardarmos esses dados em uma **[Environment Variable](https://en.wikipedia.org/wiki/Environment_variable)**, vamos deixar dessa forma para simplicidade, uma vez que nosso objetivo é entender os fundamentos.
@@ -169,21 +169,21 @@ Agora que temos nosso formulário definido, vamos definir **duas novas rotas** p
 ```python
 @app.route('/wtf', methods=['GET','POST'])
 def wtf():
-	form = LivroForm()
-	if form.validate_on_submit():
-		session['titulo'] = form.titulo.data 
-		session['autor'] = form.autor.data 
-		session['vivo'] = form.vivo.data 
-		session['genero'] = form.genero.data 
-		session['resumo'] = form.resumo.data 
+    form = LivroForm()
+    if form.validate_on_submit():
+        session['titulo'] = form.titulo.data 
+        session['autor'] = form.autor.data 
+        session['vivo'] = form.vivo.data 
+        session['genero'] = form.genero.data 
+        session['resumo'] = form.resumo.data 
 
-		return redirect(url_for('obrigado'))
+        return redirect(url_for('obrigado'))
 
-	return render_template('wtf.html', form=form)
+    return render_template('wtf.html', form=form)
 
 @app.route('/obrigado')
 def obrigado():
-	return render_template('obrigado.html')
+    return render_template('obrigado.html')
 ```
 
 - A primeira rota **wtf()** vai processar o formulário (caso seja uma requisição POST) ou vai renderizar o formulário (caso seja uma requisição GET)
@@ -200,20 +200,20 @@ Agora precisamos criar nossos templates para que possamos exibir o formulário e
 <h1>Cadastro de Livros Flask-WTF</h1>
 
 <form method="POST">
-	{{ form.hidden_tag() }}
-	{{ form.titulo.label }} {{ form.titulo() }}
-	<br>
-	{{ form.autor.label }} {{ form.autor() }}
-	<br>
-	{{ form.vivo.label }} {{ form.vivo() }}
-	<br>
-	{{ form.genero.label }} {{ form.genero() }}
-	<br>
-	<p>Resumo da Obra</p>
-	<br>
-	{{ form.resumo() }}
-	<br>
-	{{ form.submit() }}
+    {{ form.hidden_tag() }}
+    {{ form.titulo.label }} {{ form.titulo() }}
+    <br>
+    {{ form.autor.label }} {{ form.autor() }}
+    <br>
+    {{ form.vivo.label }} {{ form.vivo() }}
+    <br>
+    {{ form.genero.label }} {{ form.genero() }}
+    <br>
+    <p>Resumo da Obra</p>
+    <br>
+    {{ form.resumo() }}
+    <br>
+    {{ form.submit() }}
 </form>
 ```
 
@@ -228,11 +228,11 @@ Por fim vamos editar nosso arquivo `obrigado.html` com o seguinte conteúdo
 <h1>Obrigado por cadastar o livro em nossa aplicação</h1>
 
 <ul>
-	<li>Título: {{ session['titulo'] }}</li>
-	<li>Autor: {{ session['autor'] }}</li>
-	<li>Vivo: {{ session['vivo'] }}</li>
-	<li>Genero: {{ session['genero'] }}</li>
-	<li>Resumo: {{ session['resumo'] }}</li>
+    <li>Título: {{ session['titulo'] }}</li>
+    <li>Autor: {{ session['autor'] }}</li>
+    <li>Vivo: {{ session['vivo'] }}</li>
+    <li>Genero: {{ session['genero'] }}</li>
+    <li>Resumo: {{ session['resumo'] }}</li>
 </ul>
 ```
 
