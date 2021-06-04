@@ -12,8 +12,8 @@ No diretório `css` vamos criar um arquivo `style.css` com o seguinte conteúdo:
 
 ```css
 body {
-	background-color: gray;
-	color: white;
+    background-color: gray;
+    color: white;
 }
 ```
 
@@ -58,7 +58,7 @@ Agora em nossa aplicação, vamos editar o arquivo `app.py` de forma que possamo
 ```python
 @app.route('/static')
 def arquivos_static():
-	return render_template('static.html')
+    return render_template('static.html')
 ```
 
 Veja que é apenas uma simples rota para teste, agora vamos criar um arquivo `static.html` dentro do diretório `templates` para que possamos servir o conteúdo estático. Nosso arquivo `static.html` contará com o seguinte conteúdo:
@@ -67,10 +67,10 @@ Veja que é apenas uma simples rota para teste, agora vamos criar um arquivo `st
 {% extends 'layout.html' %}
 
 {% block conteudo %}
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
-	<p>Arquivos Static</p>
-	<img src="{{ url_for('static', filename='imagens/flask-logo.png') }}">
-	<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <p>Arquivos Static</p>
+    <img src="{{ url_for('static', filename='imagens/flask-logo.png') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
 {% endblock %}
 ```
 
