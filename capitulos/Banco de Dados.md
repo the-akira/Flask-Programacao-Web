@@ -43,13 +43,13 @@ Agora que temos nossas configurações estabelecidades, vamos começar a trabalh
 
 ```python
 class Autor(db.Model):
-	id = db.Column(db.Integer, primary_key=True)
-	nome = db.Column(db.String(30), nullable=False)
-	sobrenome = db.Column(db.String(30), nullable=False)
-	livros = db.relationship('Livro', backref='autor', lazy=True)
+    id = db.Column(db.Integer, primary_key=True)
+    nome = db.Column(db.String(30), nullable=False)
+    sobrenome = db.Column(db.String(30), nullable=False)
+    livros = db.relationship('Livro', backref='autor', lazy=True)
 
-	def __repr__(self):
-		return f'Autor("{self.nome}", "{self.sobrenome}")'
+    def __repr__(self):
+        return f'Autor("{self.nome}", "{self.sobrenome}")'
 ```
 
 Começamos definindo o nome de nossa classe como **Autor**, esta que herda de `db.Model`, uma classe base para todos os modelos de Flask-SQLAlchemy. Esta classe define diversos campos como variáveis de classe. Campos são criados como instâncias da classe `db.Column`, no qual recebem o campo como argumento, mais alguns argumentos adicionais como por exemplo `primary_key` que índica o campo como uma chave primária da tabela, que deve ser único.
@@ -71,13 +71,13 @@ Vamos agora criar a Classe que representará a tabela **Livros**
 
 ```python
 class Livro(db.Model):
-	id = db.Column(db.Integer, primary_key=True)
-	titulo = db.Column(db.String(100), nullable=False)
-	sumario = db.Column(db.String(250), nullable=False)
-	autor_id = db.Column(db.Integer, db.ForeignKey('autor.id'), nullable=False)
+    id = db.Column(db.Integer, primary_key=True)
+    titulo = db.Column(db.String(100), nullable=False)
+    sumario = db.Column(db.String(250), nullable=False)
+    autor_id = db.Column(db.Integer, db.ForeignKey('autor.id'), nullable=False)
 
-	def __repr__(self):
-		return f'Livro("{self.titulo}")'
+    def __repr__(self):
+        return f'Livro("{self.titulo}")'
 ```
 
 Como em nossa classe Autor, começamos definindo o nome de nossa classe como **Livro** e herdamos de `db.Model`. Criamos o campo **id** que representa nossa chave primária, o **titulo** de nosso livro que será uma String de até 100 caracteres e o **sumario** que será uma string de até 250 caracteres. O campo **autor_id** é chamado de **ForeignKey**, que seria como uma chave estrangeira para acessarmos o autor do respectivo livro.
