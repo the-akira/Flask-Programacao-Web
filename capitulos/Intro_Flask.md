@@ -274,10 +274,10 @@ Em `base.html` vamos definir nossa estrutura base:
 </html>
 ```
 
-Utilizando **includes** para adicionar arquivos parciais:
+Utilizando **include** para adicionar arquivos parciais:
 
 ```
-{% includes '_post.html' %}
+{% include '_post.html' %}
 ```
 
 Adicionando **folhas de estilo** para `templates/base.html`:
