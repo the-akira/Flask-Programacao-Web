@@ -29,7 +29,7 @@ def hello_world():
 ```python
 @app.route('/teste/<string:nome>') # exemplo.com/teste/Gabriel
 def teste(nome):
-	return 'Hello ' + nome # nos retornará Hello Gabriel
+    return 'Hello ' + nome # nos retornará Hello Gabriel
 ```
 
 ## Métodos Request Permitidos
@@ -54,7 +54,7 @@ from flask import render_template
 
 @app.route('/')
 def index():
-	return render_template('index.html', variavel=variavel)
+    return render_template('index.html', variavel=variavel)
 ```
 
 ## Respostas em JSON
@@ -64,10 +64,10 @@ import jsonify
 
 @app.route('/arquivojson')
 def arquivojson():
-	lista = [1,2,3,4,5]
-	dict = {'números': lista, 'nome': 'Números'}
+    lista = [1,2,3,4,5]
+    dict = {'números': lista, 'nome': 'Números'}
 
-	return jsonify({'output': dict})
+    return jsonify({'output': dict})
 ```
 
 ## Acessando Dados de Request
@@ -88,11 +88,11 @@ from flask import url_for, redirect
 
 @app.route('/home')
 def home():
-	return render_template('home.html')
+    return render_template('home.html')
 
 @app.route('/redirecionar')
 def redirecionar():
-	return redirect(url_for('home'))
+    return redirect(url_for('home'))
 ```
 
 ## Abortando
@@ -102,8 +102,8 @@ from flask import abort
 
 @app.route('/')
 def index():
-	abort(404) # Retorna o erro 404
-	render_template('index.html') # Essa linha nunca é executada
+    abort(404) # Retorna o erro 404
+    render_template('index.html') # Essa linha nunca é executada
 ```
 
 ## Setando Cookies
@@ -113,9 +113,9 @@ from flask import make_response
 
 @app.route('/')
 def index():
-	resposta = make_response(render_template('index.html'))
-	resposta.set_cookie('nome_do_cookie', 'valor_do_cookie')
-	return resposta
+    resposta = make_response(render_template('index.html'))
+    resposta.set_cookie('nome_do_cookie', 'valor_do_cookie')
+    return resposta
 ```
 
 ## Lidando com Sessões
@@ -127,16 +127,16 @@ app.config['SECRET_KEY'] = 'qualquer string aleatória'
 
 @app.route('/login_sucesso') # Seta a sessão
 def login_sucesso():
-	session['nome_da_chave'] = 'valor_da_chave' # Guarda um cookie seguro no browser
-	return redirect(url_for('index'))
+    session['nome_da_chave'] = 'valor_da_chave' # Guarda um cookie seguro no browser
+    return redirect(url_for('index'))
 
 @app.route('/') # Sessão de leitura
 def index():
-	if 'nome_da_chave' in session:
-		# Sessão existe e há uma chave
-		session_var = session['valor_da_chave']
-	else:
-		# Sessão não existe	
+    if 'nome_da_chave' in session:
+        # Sessão existe e há uma chave
+        session_var = session['valor_da_chave']
+    else:
+        # Sessão não existe	
 ```
 
 ## Estruturando uma Aplicação com Blueprints
@@ -146,21 +146,21 @@ A árvore seguinte representa um projeto com o nome de **projeto**
 ```
 run.py
 projeto/
-	__init__.py
-	config.py
-	forms.py
-	models.py
-	admin/
-		__init__.py
-		routes.py
-	main/
-		__init__.py
-		routes.py
-	templates/
-		index.html
-	static/
-		css/
-			style.css
+    __init__.py
+    config.py
+    forms.py
+    models.py
+    admin/
+        __init__.py
+        routes.py
+    main/
+        __init__.py
+        routes.py
+    templates/
+        index.html
+    static/
+        css/
+            style.css
 ```
 
 ### Em `run.py`
@@ -169,7 +169,7 @@ projeto/
 from projeto import app
 
 if __name__ == '__main__':
-	app.run()
+    app.run()
 ```
 
 ### Em `projeto/__init__.py`
@@ -194,7 +194,7 @@ main = Blueprint('main', __name__)
 
 @main.route('/')
 def index():
-	return "Hello, World! Essa é a página principal."
+    return "Hello, World! Essa é a página principal."
 ```
 
 ### Em `projeto/admin/routes.py`
@@ -206,7 +206,7 @@ admin = Blueprint('admin', __name__)
 
 @main.route('/')
 def index():
-	return "Hello, World! Essa é a página de administração."
+    return "Hello, World! Essa é a página de administração."
 ```
 
 ## Utilizando Jinja2 (Template Engine)
@@ -218,26 +218,26 @@ from flask import Blueprint, render_template
 
 @main.route('/')
 def home():
-	# Define uma lista de dicionários posts
-	posts = [
-		{
-			"texto": "Hello, this is a post",
-			"data": "This is a date and time",
-		}
-	]
+    # Define uma lista de dicionários posts
+    posts = [
+        {
+            "texto": "Hello, this is a post",
+            "data": "This is a date and time",
+        }
+    ]
 	
-	# Passa a lista de dicionários para o template HTML
-	return render_template("home.html", posts=posts)
+    # Passa a lista de dicionários para o template HTML
+    return render_template("home.html", posts=posts)
 ```
 
 Utilizando Jinja2 dentro de `templates/home.html`:
 
 ```html
 {% for posts in posts %}
-	<div>
-		<p>{{ post.texto }}</p>
-		<p>{{ post.data }}</p>
-	</div>
+    <div>
+        <p>{{ post.texto }}</p>
+        <p>{{ post.data }}</p>
+    </div>
 {% endfor %}
 ```
 
@@ -254,7 +254,7 @@ Utilizando **extends**:
 
 {% block content %}
 <p>
-	Hello, world!
+    Hello, world!
 </p>
 {% endblock %}
 ```
@@ -264,13 +264,13 @@ Em `base.html` vamos definir nossa estrutura base:
 ```html
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width initial-scale=1">
-	</head>
-	<body>
-		{% blockcontent %}{% endblock %}
-	</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+    </head>
+    <body>
+        {% blockcontent %}{% endblock %}
+    </body>
 </html>
 ```
 
@@ -296,14 +296,14 @@ from flask_sqlalchemy import SQLAlchemy
 db = SQLAlchemy()
 
 class Post(db.Model):
-	id = db.Column(db.Integer, primary_key=True)
-	body = db.Column(db.String(256))
+    id = db.Column(db.Integer, primary_key=True)
+    body = db.Column(db.String(256))
 
-	def __init__(self, body):
-		self.body = body
+    def __init__(self, body):
+        self.body = body
 
-	def __repr__(self):
-		return "<Post({})>".format(self.id)
+    def __repr__(self):
+        return "<Post({})>".format(self.id)
 ```
 
 Em `projeto/__init__.py`:
@@ -314,7 +314,7 @@ from projeto.models import db
 app = Flask(__name__)
 app.config.from_object(config.DevelopmentConfig)
 with app.app_context():
-	db.init_app()
+    db.init_app()
 ```
 
 Em `projeto/config.py`:
@@ -324,9 +324,9 @@ import os
 BASE_DIR = os.path.abspath(os.path.dirname(__name__))
 
 class BaseConfig(object):
-	# ...
-	SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(BASE_DIR, 'data.db')
-	SQLALCHEMY_TRACK_MODIFICATIONS = False
+    # ...
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(BASE_DIR, 'data.db')
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
 ```
 
 Criando a Base de Dados e interagindo com os modelos e *queries* dentro de uma [shell](https://en.wikipedia.org/wiki/Shell_(computing))
