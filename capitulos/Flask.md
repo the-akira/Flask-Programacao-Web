@@ -133,7 +133,7 @@ def hello_world():
     return 'Hello World!'
 
 if __name__ == '__main__':
-  app.run()
+    app.run()
 ```
 
 1. Começamos importando a classe Flask. Uma instância dessa classe será nossa aplicação **WSGI**
@@ -156,7 +156,7 @@ def hello_world():
 
 # Roda o nosso app
 if __name__ == '__main__':
-  app.run()
+    app.run()
 ```
 
 Agora finalmente podemos executar nossa aplicação através do comando `python app.py`. Por padrão Flask irá utilizar a porta 5000 de nosso localhost, então navegue até `http://127.0.0.1:5000/` para ver nossa aplicação funcionando. Perfeito, conseguimos executar nossa primeira aplicação em Flask, é incrível como em poucas linhas de códigos conseguimos obter este resultado. Flask é realmente poderoso.
