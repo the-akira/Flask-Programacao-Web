@@ -165,21 +165,21 @@ Caso queiramos disponibilizar nossa aplicação para outras pessoas em nossa red
 
 ```python
 if __name__ == '__main__':
-  app.run(host='0.0.0.0')
+    app.run(host='0.0.0.0')
 ```
 
 Para alterarmos a porta em que a aplicação é disponibilizada passamos o parâmetro **port** para a função **run()**
 
 ```python
 if __name__ == '__main__':
-  app.run(port=3535)
+    app.run(port=3535)
 ```
 
 Nossa aplicação agora estará rodando na porta **3535**. Por fim, mas não menos importante, podemos ativar o modo **debug** para facilitar o processo de desenvolvimento de nossas aplicações.
 
 ```python
 if __name__ == '__main__':
-  app.run(debug=True)
+    app.run(debug=True)
 ```
 
 Atribuindo **debug** como **True** nos permite um maior controle sobre os erros que ocorrem durante o desenvolvimento, porém é importante lembrarmos que devemos utilizar somente durante essa fase, jamais devemos utilizar em produção.
