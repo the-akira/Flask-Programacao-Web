@@ -57,19 +57,19 @@ Agora que temos uma nova rota chamada de **formulario**, vamos então criar um t
 {% block conteudo %}
     <p>Formulário</p>
     <form method="POST">
-	    Nome:
-	    <br>
-	    <input type="text" name="nome">
-	    <br>
-	    Email:
-	    <br>
-	    <input type="email" name="email">
-	    <br>
-	    Senha:
-	    <br>
-	    <input type="password" name="senha">
-	    <br>
-	    <input type="submit" value="Enviar">
+        Nome:
+        <br>
+        <input type="text" name="nome">
+        <br>
+        Email:
+        <br>
+        <input type="email" name="email">
+        <br>
+        Senha:
+        <br>
+        <input type="password" name="senha">
+        <br>
+        <input type="submit" value="Enviar">
     </form>
 {% endblock %}
 ```
