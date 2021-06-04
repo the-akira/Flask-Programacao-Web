@@ -82,7 +82,11 @@ class Livro(db.Model):
 
 Como em nossa classe Autor, começamos definindo o nome de nossa classe como **Livro** e herdamos de `db.Model`. Criamos o campo **id** que representa nossa chave primária, o **titulo** de nosso livro que será uma String de até 100 caracteres e o **sumario** que será uma string de até 250 caracteres. O campo **autor_id** é chamado de **ForeignKey**, que seria como uma chave estrangeira para acessarmos o autor do respectivo livro.
 
-- Por fim, o método mágico `__repr__` diz ao Python como imprimir os objetos dessa classe
+- Por fim, o método mágico `__repr__` diz ao Python como imprimir os objetos dessa classe.
+
+A imagem a seguir ilustra o [esquema](https://en.wikipedia.org/wiki/Database_schema) de nosso banco de dados:
+
+![img](https://raw.githubusercontent.com/the-akira/Flask-Programacao-Web/master/imagens/Tabelas.png)
 
 Agora que nossos modelos estão estabelecidos, é hora de testarmos nosso banco de dados para termos certeza que podemos inserir dados. Dentro de seu diretório `Exemplos` onde reside o arquivo `models.py`, abra o interpretador Python para que possamos trabalhar interactivamente. Para isso digite `python`
 
