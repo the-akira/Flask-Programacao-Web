@@ -95,7 +95,7 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-```
+```html
 <p>Olá {{ nome }}</p>
 ```
 
