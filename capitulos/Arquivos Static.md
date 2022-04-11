@@ -33,7 +33,7 @@ Veja que é apenas um simples **script** que exibe um alerta 'Hello World'.
 
 Agora vamos obter o logo do Flask: 
 
-![flask-logo](https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png)
+![img](https://raw.githubusercontent.com/the-akira/Flask-Programacao-Web/master/imagens/FlaskLogo.png)
 
 Vamos salvá-lo em nosso diretório `imagens`. 
 

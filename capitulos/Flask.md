@@ -34,7 +34,7 @@ Você pode conferir projetos e corporações que usam Flask em: **[flask-powered
 
 Para instalarmos Flask é necessário que tenhamos Python em nosso computador, caso você ainda não o tenha, faça o download através do **[Website Oficial](https://www.python.org/downloads/)** e você estará pronto para começar.
 
-Agora abra a sua **[Interface de Linha de Comandos](https://en.wikipedia.org/wiki/Shell_(computing))** ![terminal](https://i.imgur.com/XYkmrFY.png) e digite:
+Agora abra a sua **[Interface de Linha de Comandos](https://en.wikipedia.org/wiki/Shell_(computing))** ![terminal](https://raw.githubusercontent.com/the-akira/Flask-Programacao-Web/master/imagens/CMD.png) e digite:
 
 ```
 python --version
